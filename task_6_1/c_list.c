@@ -6,8 +6,8 @@ int append_list_item(void* list[], int size, void* item, list_data_type type) {
     if (size >= CAPACITY) {
         return -1;  // List is full
     }
-    list[size] = item;  // Add the item to the list
-    return size + 1;  // Return the new size
+    list[size] = item;
+    return size + 1;
 }
 
 //prints the elements of the list based on their type.
